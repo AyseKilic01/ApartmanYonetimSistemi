@@ -57,6 +57,36 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCRUD.Designer.cs">
+      <DependentUpon>FrmCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDaire.Designer.cs">
+      <DependentUpon>FrmDaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFoto.Designer.cs">
+      <DependentUpon>FrmFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInfo.Designer.cs">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmVeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmVeri.Designer.cs">
+      <DependentUpon>FrmVeri.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +103,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FrmAna.resx">
       <DependentUpon>FrmAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCRUD.resx">
+      <DependentUpon>FrmCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDaire.resx">
+      <DependentUpon>FrmDaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFoto.resx">
+      <DependentUpon>FrmFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInfo.resx">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

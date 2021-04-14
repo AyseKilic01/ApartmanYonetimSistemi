@@ -83,6 +83,7 @@
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.Properties.Appearance.Options.UseFont = true;
+            this.txtSifre.Properties.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(184, 28);
             this.txtSifre.TabIndex = 6;
             // 
