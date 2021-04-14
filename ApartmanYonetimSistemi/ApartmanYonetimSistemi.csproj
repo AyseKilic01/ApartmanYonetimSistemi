@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseApartmanYonetimSistemi\BaseApartmanYonetimSistemi.csproj">
+      <Project>{aee06005-57fa-4850-81ba-ab9c934aef0f}</Project>
+      <Name>BaseApartmanYonetimSistemi</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
