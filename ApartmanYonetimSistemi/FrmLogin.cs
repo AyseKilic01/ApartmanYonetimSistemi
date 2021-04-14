@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,10 @@ namespace ApartmanYonetimSistemi
                 Forms.FrmAna frm = new Forms.FrmAna();
                 frm.Show();
                 this.Hide();
+            }
+            else
+            {
+                XtraMessageBox.Show("Kullanıcı adı veya şifre yanlış !!");
             }
         }
     }

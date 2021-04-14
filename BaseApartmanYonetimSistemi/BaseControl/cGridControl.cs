@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace afbLibrary
+namespace BaseApartmanYonetimSistemi.BaseControl
 {
     [ToolboxItem(true)]
     public partial class cGridControl : GridControl
@@ -20,7 +20,7 @@ namespace afbLibrary
             switch (keys.KeyCode)
             {
                 case Keys.Delete:
-                    if (MessageBox.Show("Seçilen Satır Silinecektir\r\nOnaylıyor Musunuz?", "AYLIK MASRAF TAKİBİ", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show("Seçilen Satır Silinecektir\r\nOnaylıyor Musunuz?", "Apartman Yönetim Sistemi", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         gridview.DeleteSelectedRows();
                     }

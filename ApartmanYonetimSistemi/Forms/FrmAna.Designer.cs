@@ -114,7 +114,7 @@
             this.btnInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.btnInfo.Location = new System.Drawing.Point(12, 447);
             this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(117, 29);
+            this.btnInfo.Size = new System.Drawing.Size(163, 29);
             this.btnInfo.TabIndex = 4;
             this.btnInfo.Text = "Hakkımızda";
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);

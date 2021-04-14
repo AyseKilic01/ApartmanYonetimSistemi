@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -57,18 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseControl\cBarManager.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="BaseControl\cBarManager.Designer.cs" />
     <Compile Include="BaseControl\cGridControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="BaseControl\cGridControl.Designer.cs" />
-    <Compile Include="BaseControl\cGridLookupEdit.cs">
-      <SubType>Component</SubType>
+    <Compile Include="BaseControl\cGridControl.Designer.cs">
+      <DependentUpon>cGridControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="BaseControl\cGridLookupEdit.Designer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

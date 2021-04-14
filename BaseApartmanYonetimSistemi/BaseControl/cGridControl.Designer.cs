@@ -1,4 +1,4 @@
-﻿namespace afbLibrary
+﻿namespace BaseApartmanYonetimSistemi.BaseControl
 {
     partial class cGridControl
     {
