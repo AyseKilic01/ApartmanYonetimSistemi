@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1401
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApartmanYonetimSistemi", "ApartmanYonetimSistemi\ApartmanYonetimSistemi.csproj", "{7ADD39EB-0679-4C6B-BC1B-247785ACDA1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseApartmanYonetimSistemi", "BaseApartmanYonetimSistemi\BaseApartmanYonetimSistemi.csproj", "{AEE06005-57FA-4850-81BA-AB9C934AEF0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7ADD39EB-0679-4C6B-BC1B-247785ACDA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ADD39EB-0679-4C6B-BC1B-247785ACDA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ADD39EB-0679-4C6B-BC1B-247785ACDA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE06005-57FA-4850-81BA-AB9C934AEF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE06005-57FA-4850-81BA-AB9C934AEF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE06005-57FA-4850-81BA-AB9C934AEF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE06005-57FA-4850-81BA-AB9C934AEF0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
