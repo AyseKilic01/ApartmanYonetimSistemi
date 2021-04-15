@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace ApartmanYonetimSistemi.Forms
 {
@@ -21,14 +22,12 @@ namespace ApartmanYonetimSistemi.Forms
         {
             FrmDaire frm = new FrmDaire();
             frm.Show();
-            this.Hide();
         }
 
         private void btnVeriler_Click(object sender, EventArgs e)
         {
             FrmVeri frm = new FrmVeri();
             frm.Show();
-            this.Hide();
         }
 
         private void btnCRUD_Click(object sender, EventArgs e)
@@ -41,19 +40,17 @@ namespace ApartmanYonetimSistemi.Forms
         {
             FrmFoto frm = new FrmFoto();
             frm.Show();
-            this.Hide();
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            FrmInfo frm = new FrmInfo();
-            frm.Show();
-            this.Hide();
+            XtraMessageBox.Show("@CopyRight by Ayşe Kılıç - Software Developer \r\n Apartmanınızın Mühendisi ");
         }
 
         private void btnKapa_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Çıkmak istediğinize emin misiniz?", "Apartman Yönetim Sistemi ", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                System.Windows.Forms.Application.Exit();
         }
     }
 }

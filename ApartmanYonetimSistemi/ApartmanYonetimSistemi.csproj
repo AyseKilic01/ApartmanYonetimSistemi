@@ -104,12 +104,6 @@
     <Compile Include="Forms\FrmFoto.Designer.cs">
       <DependentUpon>FrmFoto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmInfo.Designer.cs">
-      <DependentUpon>FrmInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmVeri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,8 +136,8 @@
     <EmbeddedResource Include="Forms\FrmFoto.resx">
       <DependentUpon>FrmFoto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmInfo.resx">
-      <DependentUpon>FrmInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmVeri.resx">
+      <DependentUpon>FrmVeri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -199,6 +193,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resimler\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

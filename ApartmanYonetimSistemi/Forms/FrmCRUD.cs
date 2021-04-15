@@ -24,6 +24,7 @@ namespace ApartmanYonetimSistemi.Forms
         }
         void Listele()
         {
+            txtAra.Text = "";
             listUsers.Items.Clear();
             var degerler = (from x in db.TblUser
                             select new
@@ -148,20 +149,26 @@ namespace ApartmanYonetimSistemi.Forms
         private void btnAra_Click(object sender, EventArgs e)
         {
             //listUsers.Items.Clear();
-       
-           var degerlerd = (db.TblUser.Where(x => x.Ad == txtAra.Text).ToList());
-            listUsers.Items.Clear();
-            foreach (var d in degerlerd)
+            if (txtAra.Text.Trim() != "")
             {
-                ListViewItem list = new ListViewItem();
-                list.Text = d.ID.ToString();
-                list.SubItems.Add(d.Ad.ToString());
-                list.SubItems.Add(d.Soyad.ToString());
-                list.SubItems.Add(d.Mail.ToString());
-                list.SubItems.Add(d.Telefon.ToString());
-                list.SubItems.Add(d.Daire.ToString());
-                list.SubItems.Add(d.Borclar.ToString());
-                listUsers.Items.Add(list);
+                var degerlerd = (db.TblUser.Where(x => x.Ad == txtAra.Text).ToList());
+                listUsers.Items.Clear();
+                foreach (var d in degerlerd)
+                {
+                    ListViewItem list = new ListViewItem();
+                    list.Text = d.ID.ToString();
+                    list.SubItems.Add(d.Ad.ToString());
+                    list.SubItems.Add(d.Soyad.ToString());
+                    list.SubItems.Add(d.Mail.ToString());
+                    list.SubItems.Add(d.Telefon.ToString());
+                    list.SubItems.Add(d.Daire.ToString());
+                    list.SubItems.Add(d.Borclar.ToString());
+                    listUsers.Items.Add(list);
+                }
+            }
+            else
+            {
+                XtraMessageBox.Show("Aranacak adı giriniz !");
             }
         }
     }

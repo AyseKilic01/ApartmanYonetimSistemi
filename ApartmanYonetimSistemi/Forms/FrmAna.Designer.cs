@@ -57,19 +57,20 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(496, 481);
+            this.panelControl1.Size = new System.Drawing.Size(1147, 481);
             this.panelControl1.TabIndex = 0;
             // 
             // pictureEdit1
             // 
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(157, 45);
+            this.pictureEdit1.Location = new System.Drawing.Point(2, 2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(174, 96);
+            this.pictureEdit1.Size = new System.Drawing.Size(1143, 153);
             this.pictureEdit1.TabIndex = 8;
             // 
             // btnKapa
@@ -77,7 +78,7 @@
             this.btnKapa.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKapa.Appearance.Options.UseFont = true;
             this.btnKapa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKapa.ImageOptions.Image")));
-            this.btnKapa.Location = new System.Drawing.Point(401, 447);
+            this.btnKapa.Location = new System.Drawing.Point(1038, 440);
             this.btnKapa.Name = "btnKapa";
             this.btnKapa.Size = new System.Drawing.Size(83, 29);
             this.btnKapa.TabIndex = 5;
@@ -89,7 +90,7 @@
             this.btnInfo.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnInfo.Appearance.Options.UseFont = true;
             this.btnInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInfo.ImageOptions.Image")));
-            this.btnInfo.Location = new System.Drawing.Point(12, 447);
+            this.btnInfo.Location = new System.Drawing.Point(869, 440);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(163, 29);
             this.btnInfo.TabIndex = 4;
@@ -101,9 +102,9 @@
             this.btnFoto.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnFoto.Appearance.Options.UseFont = true;
             this.btnFoto.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFoto.ImageOptions.Image")));
-            this.btnFoto.Location = new System.Drawing.Point(267, 271);
+            this.btnFoto.Location = new System.Drawing.Point(588, 184);
             this.btnFoto.Name = "btnFoto";
-            this.btnFoto.Size = new System.Drawing.Size(140, 29);
+            this.btnFoto.Size = new System.Drawing.Size(189, 29);
             this.btnFoto.TabIndex = 3;
             this.btnFoto.Text = "Fotoğraflar";
             this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
@@ -113,9 +114,9 @@
             this.btnVeriler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnVeriler.Appearance.Options.UseFont = true;
             this.btnVeriler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVeriler.ImageOptions.Image")));
-            this.btnVeriler.Location = new System.Drawing.Point(267, 194);
+            this.btnVeriler.Location = new System.Drawing.Point(822, 184);
             this.btnVeriler.Name = "btnVeriler";
-            this.btnVeriler.Size = new System.Drawing.Size(140, 29);
+            this.btnVeriler.Size = new System.Drawing.Size(200, 29);
             this.btnVeriler.TabIndex = 2;
             this.btnVeriler.Text = "Veriler";
             this.btnVeriler.Click += new System.EventHandler(this.btnVeriler_Click);
@@ -125,9 +126,9 @@
             this.btnCRUD.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCRUD.Appearance.Options.UseFont = true;
             this.btnCRUD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCRUD.ImageOptions.Image")));
-            this.btnCRUD.Location = new System.Drawing.Point(77, 271);
+            this.btnCRUD.Location = new System.Drawing.Point(337, 184);
             this.btnCRUD.Name = "btnCRUD";
-            this.btnCRUD.Size = new System.Drawing.Size(140, 29);
+            this.btnCRUD.Size = new System.Drawing.Size(195, 29);
             this.btnCRUD.TabIndex = 1;
             this.btnCRUD.Text = "Kayıt İşlemleri";
             this.btnCRUD.Click += new System.EventHandler(this.btnCRUD_Click);
@@ -136,10 +137,11 @@
             // 
             this.btnDaireler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDaireler.Appearance.Options.UseFont = true;
+            this.btnDaireler.AutoWidthInLayoutControl = true;
             this.btnDaireler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDaireler.ImageOptions.Image")));
-            this.btnDaireler.Location = new System.Drawing.Point(77, 194);
+            this.btnDaireler.Location = new System.Drawing.Point(96, 184);
             this.btnDaireler.Name = "btnDaireler";
-            this.btnDaireler.Size = new System.Drawing.Size(140, 29);
+            this.btnDaireler.Size = new System.Drawing.Size(193, 29);
             this.btnDaireler.TabIndex = 0;
             this.btnDaireler.Text = "Daireler";
             this.btnDaireler.Click += new System.EventHandler(this.btnDaireler_Click);
@@ -148,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 481);
+            this.ClientSize = new System.Drawing.Size(1147, 481);
             this.Controls.Add(this.panelControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAna";
