@@ -52,5 +52,11 @@ namespace ApartmanYonetimSistemi.Forms
             if (MessageBox.Show("Çıkmak istediğinize emin misiniz?", "Apartman Yönetim Sistemi ", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 System.Windows.Forms.Application.Exit();
         }
+
+        private void FrmAna_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Çıkmak istediğinize emin misiniz?", "Apartman Yönetim Sistemi ", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                System.Windows.Forms.Application.Exit();
+        }
     }
 }

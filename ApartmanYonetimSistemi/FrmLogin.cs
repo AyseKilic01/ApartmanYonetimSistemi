@@ -20,7 +20,7 @@ namespace ApartmanYonetimSistemi
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            if (txtKullanici.Text == "admin" && txtSifre.Text == "1234")
+            if (cmbUser.EditValue == "Admin" && txtSifre.Text == "1234")
             {
                 Forms.FrmAna frm = new Forms.FrmAna();
                 frm.Show();

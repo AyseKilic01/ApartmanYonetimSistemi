@@ -221,7 +221,7 @@
             this.btnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAra.ImageOptions.Image")));
             this.btnAra.Location = new System.Drawing.Point(954, 6);
             this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(79, 39);
+            this.btnAra.Size = new System.Drawing.Size(98, 39);
             this.btnAra.TabIndex = 21;
             this.btnAra.Text = "Ara";
             this.btnAra.Click += new System.EventHandler(this.btnAra_Click);

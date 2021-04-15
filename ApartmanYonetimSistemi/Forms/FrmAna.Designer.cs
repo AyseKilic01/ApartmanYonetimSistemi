@@ -156,6 +156,7 @@
             this.Name = "FrmAna";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Sayfa";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmAna_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();

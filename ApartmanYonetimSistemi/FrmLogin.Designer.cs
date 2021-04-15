@@ -30,30 +30,30 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.txtSifre = new DevExpress.XtraEditors.TextEdit();
-            this.txtKullanici = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnGiris = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.cmbUser = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullanici.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbUser.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
             this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Controls.Add(this.cmbUser);
             this.panelControl1.Controls.Add(this.labelControl5);
             this.panelControl1.Controls.Add(this.pictureEdit1);
             this.panelControl1.Controls.Add(this.txtSifre);
-            this.panelControl1.Controls.Add(this.txtKullanici);
             this.panelControl1.Controls.Add(this.labelControl4);
             this.panelControl1.Controls.Add(this.labelControl3);
             this.panelControl1.Controls.Add(this.labelControl2);
@@ -64,6 +64,16 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(359, 386);
             this.panelControl1.TabIndex = 1;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(51, 27);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(234, 20);
+            this.labelControl5.TabIndex = 8;
+            this.labelControl5.Text = "Apartman Yönetim Sistemi Giriş";
             // 
             // pictureEdit1
             // 
@@ -86,15 +96,6 @@
             this.txtSifre.Properties.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(184, 28);
             this.txtSifre.TabIndex = 6;
-            // 
-            // txtKullanici
-            // 
-            this.txtKullanici.Location = new System.Drawing.Point(135, 190);
-            this.txtKullanici.Name = "txtKullanici";
-            this.txtKullanici.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKullanici.Properties.Appearance.Options.UseFont = true;
-            this.txtKullanici.Size = new System.Drawing.Size(184, 28);
-            this.txtKullanici.TabIndex = 5;
             // 
             // labelControl4
             // 
@@ -148,15 +149,18 @@
             this.btnGiris.Text = "Giriş Yap";
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
-            // labelControl5
+            // cmbUser
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(51, 27);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(234, 20);
-            this.labelControl5.TabIndex = 8;
-            this.labelControl5.Text = "Apartman Yönetim Sistemi Giriş";
+            this.cmbUser.Location = new System.Drawing.Point(135, 191);
+            this.cmbUser.Name = "cmbUser";
+            this.cmbUser.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbUser.Properties.Appearance.Options.UseFont = true;
+            this.cmbUser.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbUser.Properties.Items.AddRange(new object[] {
+            "Admin"});
+            this.cmbUser.Size = new System.Drawing.Size(184, 28);
+            this.cmbUser.TabIndex = 9;
             // 
             // FrmLogin
             // 
@@ -173,7 +177,7 @@
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullanici.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbUser.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,13 +187,13 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.TextEdit txtSifre;
-        private DevExpress.XtraEditors.TextEdit txtKullanici;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton btnGiris;
         private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbUser;
     }
 }
 
