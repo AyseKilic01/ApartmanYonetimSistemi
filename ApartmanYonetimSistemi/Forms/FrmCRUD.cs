@@ -144,5 +144,25 @@ namespace ApartmanYonetimSistemi.Forms
             Listele();
             Temizle();
         }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            //listUsers.Items.Clear();
+       
+           var degerlerd = (db.TblUser.Where(x => x.Ad == txtAra.Text).ToList());
+            listUsers.Items.Clear();
+            foreach (var d in degerlerd)
+            {
+                ListViewItem list = new ListViewItem();
+                list.Text = d.ID.ToString();
+                list.SubItems.Add(d.Ad.ToString());
+                list.SubItems.Add(d.Soyad.ToString());
+                list.SubItems.Add(d.Mail.ToString());
+                list.SubItems.Add(d.Telefon.ToString());
+                list.SubItems.Add(d.Daire.ToString());
+                list.SubItems.Add(d.Borclar.ToString());
+                listUsers.Items.Add(list);
+            }
+        }
     }
 }

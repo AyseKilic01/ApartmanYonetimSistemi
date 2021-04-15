@@ -35,7 +35,6 @@ namespace ApartmanYonetimSistemi.Forms
         {
             FrmCRUD frm = new FrmCRUD();
             frm.Show();
-            this.Hide();
         }
 
         private void btnFoto_Click(object sender, EventArgs e)

@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAna));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnDaireler = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCRUD = new DevExpress.XtraEditors.SimpleButton();
-            this.btnVeriler = new DevExpress.XtraEditors.SimpleButton();
-            this.btnFoto = new DevExpress.XtraEditors.SimpleButton();
-            this.btnInfo = new DevExpress.XtraEditors.SimpleButton();
-            this.btnKapa = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.btnKapa = new DevExpress.XtraEditors.SimpleButton();
+            this.btnInfo = new DevExpress.XtraEditors.SimpleButton();
+            this.btnFoto = new DevExpress.XtraEditors.SimpleButton();
+            this.btnVeriler = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCRUD = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDaireler = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -46,6 +46,7 @@
             // 
             this.panelControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.AutoSize = true;
             this.panelControl1.Controls.Add(this.pictureEdit1);
             this.panelControl1.Controls.Add(this.btnKapa);
             this.panelControl1.Controls.Add(this.btnInfo);
@@ -59,78 +60,6 @@
             this.panelControl1.Size = new System.Drawing.Size(496, 481);
             this.panelControl1.TabIndex = 0;
             // 
-            // btnDaireler
-            // 
-            this.btnDaireler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDaireler.Appearance.Options.UseFont = true;
-            this.btnDaireler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnDaireler.Location = new System.Drawing.Point(77, 194);
-            this.btnDaireler.Name = "btnDaireler";
-            this.btnDaireler.Size = new System.Drawing.Size(140, 29);
-            this.btnDaireler.TabIndex = 0;
-            this.btnDaireler.Text = "Daireler";
-            this.btnDaireler.Click += new System.EventHandler(this.btnDaireler_Click);
-            // 
-            // btnCRUD
-            // 
-            this.btnCRUD.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCRUD.Appearance.Options.UseFont = true;
-            this.btnCRUD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.btnCRUD.Location = new System.Drawing.Point(77, 271);
-            this.btnCRUD.Name = "btnCRUD";
-            this.btnCRUD.Size = new System.Drawing.Size(140, 29);
-            this.btnCRUD.TabIndex = 1;
-            this.btnCRUD.Text = "Kayıt İşlemleri";
-            this.btnCRUD.Click += new System.EventHandler(this.btnCRUD_Click);
-            // 
-            // btnVeriler
-            // 
-            this.btnVeriler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnVeriler.Appearance.Options.UseFont = true;
-            this.btnVeriler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.btnVeriler.Location = new System.Drawing.Point(267, 194);
-            this.btnVeriler.Name = "btnVeriler";
-            this.btnVeriler.Size = new System.Drawing.Size(140, 29);
-            this.btnVeriler.TabIndex = 2;
-            this.btnVeriler.Text = "Veriler";
-            this.btnVeriler.Click += new System.EventHandler(this.btnVeriler_Click);
-            // 
-            // btnFoto
-            // 
-            this.btnFoto.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnFoto.Appearance.Options.UseFont = true;
-            this.btnFoto.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.btnFoto.Location = new System.Drawing.Point(267, 271);
-            this.btnFoto.Name = "btnFoto";
-            this.btnFoto.Size = new System.Drawing.Size(140, 29);
-            this.btnFoto.TabIndex = 3;
-            this.btnFoto.Text = "Fotoğraflar";
-            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
-            // 
-            // btnInfo
-            // 
-            this.btnInfo.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnInfo.Appearance.Options.UseFont = true;
-            this.btnInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.btnInfo.Location = new System.Drawing.Point(12, 447);
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(163, 29);
-            this.btnInfo.TabIndex = 4;
-            this.btnInfo.Text = "Hakkımızda";
-            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
-            // 
-            // btnKapa
-            // 
-            this.btnKapa.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKapa.Appearance.Options.UseFont = true;
-            this.btnKapa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.btnKapa.Location = new System.Drawing.Point(401, 447);
-            this.btnKapa.Name = "btnKapa";
-            this.btnKapa.Size = new System.Drawing.Size(83, 29);
-            this.btnKapa.TabIndex = 5;
-            this.btnKapa.Text = "Çıkış";
-            this.btnKapa.Click += new System.EventHandler(this.btnKapa_Click);
-            // 
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
@@ -142,6 +71,78 @@
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Size = new System.Drawing.Size(174, 96);
             this.pictureEdit1.TabIndex = 8;
+            // 
+            // btnKapa
+            // 
+            this.btnKapa.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKapa.Appearance.Options.UseFont = true;
+            this.btnKapa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKapa.ImageOptions.Image")));
+            this.btnKapa.Location = new System.Drawing.Point(401, 447);
+            this.btnKapa.Name = "btnKapa";
+            this.btnKapa.Size = new System.Drawing.Size(83, 29);
+            this.btnKapa.TabIndex = 5;
+            this.btnKapa.Text = "Çıkış";
+            this.btnKapa.Click += new System.EventHandler(this.btnKapa_Click);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnInfo.Appearance.Options.UseFont = true;
+            this.btnInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInfo.ImageOptions.Image")));
+            this.btnInfo.Location = new System.Drawing.Point(12, 447);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(163, 29);
+            this.btnInfo.TabIndex = 4;
+            this.btnInfo.Text = "Hakkımızda";
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
+            // btnFoto
+            // 
+            this.btnFoto.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFoto.Appearance.Options.UseFont = true;
+            this.btnFoto.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFoto.ImageOptions.Image")));
+            this.btnFoto.Location = new System.Drawing.Point(267, 271);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(140, 29);
+            this.btnFoto.TabIndex = 3;
+            this.btnFoto.Text = "Fotoğraflar";
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
+            // 
+            // btnVeriler
+            // 
+            this.btnVeriler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnVeriler.Appearance.Options.UseFont = true;
+            this.btnVeriler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVeriler.ImageOptions.Image")));
+            this.btnVeriler.Location = new System.Drawing.Point(267, 194);
+            this.btnVeriler.Name = "btnVeriler";
+            this.btnVeriler.Size = new System.Drawing.Size(140, 29);
+            this.btnVeriler.TabIndex = 2;
+            this.btnVeriler.Text = "Veriler";
+            this.btnVeriler.Click += new System.EventHandler(this.btnVeriler_Click);
+            // 
+            // btnCRUD
+            // 
+            this.btnCRUD.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCRUD.Appearance.Options.UseFont = true;
+            this.btnCRUD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCRUD.ImageOptions.Image")));
+            this.btnCRUD.Location = new System.Drawing.Point(77, 271);
+            this.btnCRUD.Name = "btnCRUD";
+            this.btnCRUD.Size = new System.Drawing.Size(140, 29);
+            this.btnCRUD.TabIndex = 1;
+            this.btnCRUD.Text = "Kayıt İşlemleri";
+            this.btnCRUD.Click += new System.EventHandler(this.btnCRUD_Click);
+            // 
+            // btnDaireler
+            // 
+            this.btnDaireler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDaireler.Appearance.Options.UseFont = true;
+            this.btnDaireler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDaireler.ImageOptions.Image")));
+            this.btnDaireler.Location = new System.Drawing.Point(77, 194);
+            this.btnDaireler.Name = "btnDaireler";
+            this.btnDaireler.Size = new System.Drawing.Size(140, 29);
+            this.btnDaireler.TabIndex = 0;
+            this.btnDaireler.Text = "Daireler";
+            this.btnDaireler.Click += new System.EventHandler(this.btnDaireler_Click);
             // 
             // FrmAna
             // 
@@ -157,6 +158,7 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
